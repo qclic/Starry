@@ -1,4 +1,34 @@
-[patch]
+[patch."https://github.com/Starry-OS//kernel_guard.git".kernel_guard]
+branch = "jailhouse"
+git = "https://github.com/Starry-OS/kernel_guard.git"
+
+[patch."https://github.com/Starry-OS//axtask.git".axtask]
+branch = "jailhouse"
+git = "https://github.com/Starry-OS/axtask.git"
+
+[patch."https://github.com/Starry-OS//axfs.git".axfs]
+branch = "jailhouse"
+git = "https://github.com/Starry-OS/axfs.git"
+
+[patch."https://github.com/Starry-OS//axhal.git".axhal]
+branch = "jailhouse"
+git = "https://github.com/Josen-B/axhal.git"
+
+[patch."https://github.com/Starry-OS//axfeat.git".axfeat]
+branch = "jailhouse"
+git = "https://github.com/Starry-OS/axfeat.git"
+
+[patch."https://github.com/Starry-OS//axprocess.git".axprocess]
+branch = "jailhouse"
+git = "https://github.com/Starry-OS/axprocess.git"
+
+[patch."https://github.com/Starry-OS//axruntime.git".axruntime]
+branch = "jailhouse"
+git = "https://github.com/Starry-OS/axruntime.git"
+
+[patch."https://github.com/Starry-OS//taskctx.git".taskctx]
+branch = "jailhouse"
+git = "https://github.com/Starry-OS/taskctx.git"
 
 [profile.dev]
 lto = true
