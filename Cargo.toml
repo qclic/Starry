@@ -1,14 +1,4 @@
-[patch."https://github.com/Josen-B//axhal.git".axhal]
-branch = "phytium-pi"
-git = "https://github.com/Josen-B/axhal.git"
-
-[patch."https://github.com/Josen-B//axruntime.git".axruntime]
-branch = "phytium-pi"
-git = "https://github.com/Josen-B/axruntime.git"
-
-[patch."https://github.com/Josen-B//of.git".of]
-branch = "phytium-pi"
-git = "https://github.com/Josen-B/of.git"
+[patch]
 
 [profile.dev]
 lto = true
