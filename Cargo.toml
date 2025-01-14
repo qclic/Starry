@@ -1,34 +1,28 @@
-[patch."https://github.com/Starry-OS//kernel_guard.git".kernel_guard]
+[patch."https://github.com/Starry-OS/axdriver.git".axdriver]
 branch = "jailhouse"
-git = "https://github.com/Starry-OS/kernel_guard.git"
+git = "https://github.com/Josen-B/axdriver.git"
 
-[patch."https://github.com/Starry-OS//axtask.git".axtask]
+[patch."https://github.com/Starry-OS/axprocess.git".axprocess]
 branch = "jailhouse"
-git = "https://github.com/Starry-OS/axtask.git"
+git = "https://github.com/Josen-B/axprocess.git"
 
-[patch."https://github.com/Starry-OS//axfs.git".axfs]
+[patch."https://github.com/Starry-OS/axruntime.git".axruntime]
 branch = "jailhouse"
-git = "https://github.com/Starry-OS/axfs.git"
+git = "https://github.com/Josen-B/axruntime.git"
 
-[patch."https://github.com/Starry-OS//axhal.git".axhal]
+[patch."https://github.com/Starry-OS/axstarry.git".axstarry]
 branch = "jailhouse"
-git = "https://github.com/Josen-B/axhal.git"
+git = "https://github.com/Josen-B/axstarry.git"
 
-[patch."https://github.com/Starry-OS//axfeat.git".axfeat]
+[patch."https://github.com/Starry-OS/taskctx.git".taskctx]
 branch = "jailhouse"
-git = "https://github.com/Starry-OS/axfeat.git"
+git = "https://github.com/Josen-B/taskctx.git"
 
-[patch."https://github.com/Starry-OS//axprocess.git".axprocess]
-branch = "jailhouse"
-git = "https://github.com/Starry-OS/axprocess.git"
+[patch."https://github.com/Starry-OS/linux_syscall_api.git".linux_syscall_api]
+git = "https://github.com/Josen-B/linux_syscall_api.git"
 
-[patch."https://github.com/Starry-OS//axruntime.git".axruntime]
-branch = "jailhouse"
-git = "https://github.com/Starry-OS/axruntime.git"
-
-[patch."https://github.com/Starry-OS//taskctx.git".taskctx]
-branch = "jailhouse"
-git = "https://github.com/Starry-OS/taskctx.git"
+[patch."https://github.com/Starry-OS/axconfig.git".axconfig]
+git = "https://github.com/Josen-B/axconfig.git"
 
 [profile.dev]
 lto = true

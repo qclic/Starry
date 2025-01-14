@@ -63,7 +63,7 @@ const UNIX_TESTCASES: &[&str] = &["busybox sh ./unixbench_testcode.sh"];
 const CYCLE_TESTCASES: &[&str] = &["busybox sh ./cyclictest_testcode.sh"];
 
 #[allow(dead_code)]
-const OTHER_TESTCASES: &[&str] = &["busybox sh"];
+const OTHER_TESTCASES: &[&str] = &["./helloworld"];
 
 #[allow(unused)]
 pub fn run_batch_testcases() {

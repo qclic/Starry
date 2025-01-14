@@ -8,7 +8,7 @@
 # default setting
 arch=x86_64
 fs=fat32
-size=30
+size=10
 FILE=
 
 display_help()
