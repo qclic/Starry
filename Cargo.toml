@@ -1,9 +1,9 @@
 [patch."https://github.com/Starry-OS/axdriver.git".axdriver]
-branch = "jailhouse"
+branch = "jailhouse_disk"
 git = "https://github.com/Josen-B/axdriver.git"
 
 [patch."https://github.com/Starry-OS/axprocess.git".axprocess]
-branch = "jailhouse"
+branch = "jailhouse_disk"
 git = "https://github.com/Josen-B/axprocess.git"
 
 [patch."https://github.com/Starry-OS/axruntime.git".axruntime]
