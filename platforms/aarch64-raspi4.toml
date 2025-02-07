@@ -1,3 +1,4 @@
+
 # Architecture identifier.
 arch = "aarch64"
 # Platform identifier.
@@ -5,17 +6,27 @@ platform = "aarch64-raspi4"
 # Platform family.
 family = "aarch64-raspi"
 
+# Base address of the whole physical memory.
+phys-memory-base = "0x4200_0000"
+# Size of the whole physical memory.
+phys-memory-size = "0x0E00_0000"     # 3G 960M
 # Base physical address of the kernel image.
-kernel-base-paddr = "0x8_0000"
+kernel-base-paddr = "0x4200_0000"
 # Base virtual address of the kernel image.
-kernel-base-vaddr = "0xffff_0000_0008_0000"
+kernel-base-vaddr = "0xffff_0000_4200_0000"
 # Linear mapping offset, for quick conversions between physical and virtual
 # addresses.
 phys-virt-offset = "0xffff_0000_0000_0000"
+# Offset of bus address and phys address.
+phys-bus-offset = "0xC0000000"
+# Kernel address space base.
+kernel-aspace-base = "0xffff_0000_0000_0000"
+# Kernel address space size.
+kernel-aspace-size = "0x0000_ffff_ffff_f000"
 # MMIO regions with format (`base_paddr`, `size`).
 mmio-regions = [
-    ["0xFE20_1000", "0x1000"],      # PL011 UART
-    ["0xFF84_1000", "0x8000"],      # GICv2
+  ["0xFE20_1000", "0x1000"],      # PL011 UART
+  ["0xFF84_1000", "0x8000"],      # GICv2
 ]
 virtio-mmio-regions = []
 # UART Address
@@ -23,5 +34,21 @@ uart-paddr = "0xFE20_1000"
 uart-irq = "0x79"
 
 # GIC Address
-gicc-paddr = "0xFF84_2000"
-gicd-paddr = "0xFF84_1000"
+gicc-paddr = "0xFF84_1000"
+gicd-paddr = "0xFF84_2000"
+
+# Testcase memory start address.
+testcase-memory-start = "0x4900_0000"
+# Testcase memory size.
+testcase-memory-size = "0x300_0000"
+# The base address of the user heap.
+user-heap-base = "0x3FA0_0000"
+# The base address of the user stack. And the stack bottom is `user-stack-top + max-user-stack-size`.
+user-stack-top = "0x3FE0_0000"
+# The size of the user heap.
+max-user-heap-size = "0x40_0000"
+# The size of the user stack.
+max-user-stack-size = "0x20_0000"
+
+# RTC (PL031) Address (Need to read from DTB).
+rtc-paddr = "0x0"
